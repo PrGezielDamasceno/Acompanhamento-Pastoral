@@ -1,0 +1,92 @@
+{
+  "name": "Relatorio",
+  "type": "object",
+  "properties": {
+    "extensao_id": {
+      "type": "string",
+      "title": "Extens\u00e3o"
+    },
+    "extensao_nome": {
+      "type": "string",
+      "title": "Nome da Extens\u00e3o"
+    },
+    "data_culto": {
+      "type": "string",
+      "format": "date",
+      "title": "Data do Culto"
+    },
+    "dia_semana": {
+      "type": "string",
+      "title": "Dia da Semana"
+    },
+    "tipo_reuniao": {
+      "type": "string",
+      "enum": [
+        "domingo_manha",
+        "domingo_noite",
+        "quinta",
+        "especial",
+        "outro"
+      ],
+      "title": "Tipo de Reuni\u00e3o"
+    },
+    "turno": {
+      "type": "string",
+      "enum": [
+        "manha",
+        "noite"
+      ],
+      "title": "Turno"
+    },
+    "adultos": {
+      "type": "number",
+      "title": "Adultos",
+      "minimum": 0
+    },
+    "criancas": {
+      "type": "number",
+      "title": "Crian\u00e7as",
+      "minimum": 0
+    },
+    "visitantes": {
+      "type": "number",
+      "title": "Visitantes",
+      "minimum": 0
+    },
+    "conversoes": {
+      "type": "number",
+      "title": "Convers\u00f5es",
+      "minimum": 0
+    },
+    "pregador": {
+      "type": "string",
+      "title": "Pregador"
+    },
+    "santa_ceia": {
+      "type": "boolean",
+      "title": "Santa Ceia"
+    },
+    "houve_apelo": {
+      "type": "boolean",
+      "title": "Houve Apelo"
+    },
+    "visita_pastoral": {
+      "type": "boolean",
+      "title": "Visita Pastoral"
+    },
+    "observacoes": {
+      "type": "string",
+      "title": "Observa\u00e7\u00f5es"
+    }
+  },
+  "required": [
+    "extensao_id",
+    "data_culto",
+    "tipo_reuniao",
+    "turno",
+    "adultos",
+    "criancas",
+    "visitantes",
+    "conversoes"
+  ]
+}

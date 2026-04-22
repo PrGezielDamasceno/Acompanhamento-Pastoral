@@ -1,0 +1,73 @@
+{
+  "name": "Pessoa",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string",
+      "title": "Nome"
+    },
+    "telefone": {
+      "type": "string",
+      "title": "Telefone"
+    },
+    "email": {
+      "type": "string",
+      "title": "E-mail"
+    },
+    "origem": {
+      "type": "string",
+      "title": "Como chegou"
+    },
+    "extensao_id": {
+      "type": "string",
+      "title": "Extens\u00e3o"
+    },
+    "extensao_nome": {
+      "type": "string",
+      "title": "Nome da Extens\u00e3o"
+    },
+    "etapa_cia": {
+      "type": "string",
+      "enum": [
+        "visitante",
+        "primeiro_contato",
+        "novo_convertido",
+        "em_consolidacao",
+        "integrado"
+      ],
+      "title": "Etapa CIA"
+    },
+    "responsavel": {
+      "type": "string",
+      "title": "Respons\u00e1vel pelo Acompanhamento"
+    },
+    "data_visita": {
+      "type": "string",
+      "format": "date",
+      "title": "Data da Primeira Visita"
+    },
+    "data_conversao": {
+      "type": "string",
+      "format": "date",
+      "title": "Data da Convers\u00e3o"
+    },
+    "data_ultimo_contato": {
+      "type": "string",
+      "format": "date",
+      "title": "Data do \u00daltimo Contato"
+    },
+    "relatorio_id": {
+      "type": "string",
+      "title": "Culto de Origem"
+    },
+    "observacoes": {
+      "type": "string",
+      "title": "Observa\u00e7\u00f5es"
+    }
+  },
+  "required": [
+    "nome",
+    "etapa_cia",
+    "extensao_id"
+  ]
+}

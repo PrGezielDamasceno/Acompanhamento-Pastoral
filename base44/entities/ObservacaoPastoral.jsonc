@@ -1,0 +1,42 @@
+{
+  "name": "ObservacaoPastoral",
+  "type": "object",
+  "properties": {
+    "extensao_id": {
+      "type": "string",
+      "title": "Extens\u00e3o"
+    },
+    "extensao_nome": {
+      "type": "string",
+      "title": "Nome da Extens\u00e3o"
+    },
+    "data": {
+      "type": "string",
+      "format": "date",
+      "title": "Data"
+    },
+    "nivel_atencao": {
+      "type": "string",
+      "enum": [
+        "saudavel",
+        "ajustes",
+        "risco"
+      ],
+      "title": "N\u00edvel de Aten\u00e7\u00e3o"
+    },
+    "observacao": {
+      "type": "string",
+      "title": "Observa\u00e7\u00e3o"
+    },
+    "encaminhamento": {
+      "type": "string",
+      "title": "Encaminhamento"
+    }
+  },
+  "required": [
+    "extensao_id",
+    "data",
+    "nivel_atencao",
+    "observacao"
+  ]
+}

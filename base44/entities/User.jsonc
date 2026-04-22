@@ -1,0 +1,35 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "enum": [
+        "admin",
+        "supervisor",
+        "lider"
+      ],
+      "title": "Perfil"
+    },
+    "extensao_id": {
+      "type": "string",
+      "title": "Extens\u00e3o Vinculada"
+    },
+    "extensao_nome": {
+      "type": "string",
+      "title": "Nome da Extens\u00e3o"
+    },
+    "telefone": {
+      "type": "string",
+      "title": "Telefone"
+    },
+    "status_usuario": {
+      "type": "string",
+      "enum": [
+        "ativo",
+        "inativo"
+      ],
+      "title": "Status"
+    }
+  }
+}
